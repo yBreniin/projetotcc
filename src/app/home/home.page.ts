@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 
 
@@ -8,12 +8,11 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
   constructor(private menu: MenuController) {}
+
 
   openFirst() {
     this.menu.enable(true, 'first');
     this.menu.open('first');
   }
-
 }

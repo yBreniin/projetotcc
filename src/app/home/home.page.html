@@ -1,6 +1,6 @@
  <ion-header class="ion-no-border">
   <ion-toolbar color="warning">
-    <ion-title class="meio">
+    <ion-title class="headermeio">
       Shoppe Pobre
     </ion-title>
 
@@ -8,7 +8,7 @@
       <ion-icon slot="icon-only" name="bag-outline" color="dark"></ion-icon>
     </ion-button>
 
-    <ion-button slot="start" fill="clear" (click)="openFirst">
+    <ion-button slot="start" fill="clear" (click)="openFirst()">
       <ion-icon slot="icon-only" name="menu-outline" color="dark"></ion-icon>
     </ion-button>
 
@@ -16,27 +16,36 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <!--Menu-->
-  <ion-menu side="start" menuId="first" contentId="main">
-    <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Start Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
-  <!--Menu-->
 
+    <!--Menu-->
+    <ion-menu side="start" menuId="first" contentId="main">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Start Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item class="menufonte"><ion-icon name="search-outline" class="espaco"></ion-icon>Busca</ion-item>
+          <ion-item class="menufonte"><ion-icon name="list-outline" class="espaco"></ion-icon>Categoria</ion-item>
+          <ion-item class="menufonte"><ion-icon name="star" class="espaco"></ion-icon>Busca</ion-item>
+          <ion-item class="menufonte"><ion-icon name="star" class="espaco"></ion-icon>Busca</ion-item>
+          <ion-item class="menufonte"><ion-icon name="person-outline" class="espaco"></ion-icon>Conta</ion-item>
+        </ion-list>
+      </ion-content>
+      <ion-label class="version">v1.53</ion-label>
+    </ion-menu>
+    <ion-router-outlet id="main"></ion-router-outlet>
+    <!--Menu-->
 
+    <!--Aba Principal-->
   <ion-item color="warning">
-
+    <div data-slide="slide" class="slide">
+      <div class="slide-items">
+        <img src="./img/img1.jpg" alt="Img 1">
+        <img src="./img/img2.jpg" alt="Img 2">
+      </div>
+    </div>
   </ion-item>
+  <!--Aba Principal-->
 </ion-content>
