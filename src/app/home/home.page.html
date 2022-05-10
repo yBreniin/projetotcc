@@ -1,12 +1,14 @@
  <ion-header class="ion-no-border">
-  <ion-toolbar color="warning">
+  <ion-toolbar>
     <ion-title class="headermeio">
       Custom Clothes
     </ion-title>
 
-    <ion-button slot="end" fill="clear">
+    <!-- Abrir Carrinho -->
+    <ion-button slot="end" fill="clear" color="dark">
       <ion-icon slot="icon-only" name="bag-outline" color="dark"></ion-icon>
     </ion-button>
+    <!-- Abrir Carrinho -->
 
     <!--Abrir Menu-->
     <ion-button slot="start" fill="clear" (click)="openFirst()">
@@ -17,11 +19,12 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
     <!--Menu-->
     <ion-menu side="start" menuId="first" contentId="main">
       <ion-content>
+        <div>
+          <img src="https://assets.turbologo.com/blog/pt/2019/11/19133547/gaming-logo-cover.jpg" alt="receba">
+        </div>
         <ion-list>
           <ion-item class="menufonte"><ion-icon name="search-outline" class="espaco"></ion-icon>Busca</ion-item>
           <ion-item class="menufonte"><ion-icon name="list-outline" class="espaco"></ion-icon>Categoria</ion-item>
@@ -33,19 +36,49 @@
     <ion-router-outlet id="main"></ion-router-outlet>
     <!--Menu-->
 
-    <!--Aba Principal-->
+    <!--Slides-->
     <div>
-      <ion-slides pager="true" [options]="slideOpts">
+      <ion-slides [options]="option">
         <ion-slide>
-          <img src="">
+          <ion-card>
+            <img src="https://www.stylourbano.com.br/wp-content/uploads/2019/12/ggg.jpg">
+          </ion-card>
         </ion-slide>
         <ion-slide>
-          <h1>Slide 2</h1>
+          <ion-card>
+            <img src="https://escoladeestilo.com.br/wp-content/uploads/2020/07/International-Fashion-Week.png">
+          </ion-card>
         </ion-slide>
         <ion-slide>
-          <h1>Slide 3</h1>
+          <ion-card>
+            <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3045388:1612965241/Dicas-de-moda-para-o-ver-o-2021.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=5812d4c">
+          </ion-card>
         </ion-slide>
       </ion-slides>
     </div>
-  <!--Aba Principal-->
+  <!--Slides-->
+
+
+<ion-content>
+  <ion-slides [options]="round" spaceBetween="-18">
+
+    <ion-slide>
+      <ion-card class="redondo">
+        <img src="https://www.stylourbano.com.br/wp-content/uploads/2019/12/ggg.jpg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="redondo">
+        <img src="https://escoladeestilo.com.br/wp-content/uploads/2020/07/International-Fashion-Week.png">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="redondo">
+        <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3045388:1612965241/Dicas-de-moda-para-o-ver-o-2021.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=5812d4c">
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
 </ion-content>

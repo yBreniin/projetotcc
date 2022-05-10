@@ -45,7 +45,28 @@
   font-size: 10px;
 }
 
-ion-slides {
-  background: #000;
+ion-card {
+  width: 100%;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    transform: scale(1.1, 1.1) rotate(1deg);
+    transition: 600ms all ease-in-out;
+  }
 }
 
+.categoriaRoupas {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 15px;
+}
+
+.butao {
+  text-align: left;
+}
+
+.redondo {
+  width:80px;
+  height:80px;
+  border-radius:50px;
+}

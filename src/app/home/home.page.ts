@@ -11,9 +11,21 @@ export class HomePage implements AfterViewInit {
   @ViewChild('title', { read: ElementRef, static: true }) title: ElementRef;
   anim: Animation;
 
-  slideOpts = {
-    initialSlide: 1,
-    speed: 400
+  option = {
+    initialSlide: 0,
+    slidesPerView: 1,
+    autoplay:true
+  };
+
+  round = {
+    slidesPerView: 3,
+    grabCursor: true,
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+    }
   };
 
   constructor(
