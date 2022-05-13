@@ -68,5 +68,11 @@ ion-card {
 .redondo {
   width:80px;
   height:80px;
-  border-radius:50px;
+  border-radius: 100%;
+}
+
+.slides-md {
+  --bullet-background: #000000;
+  --bullet-background-active: #000000;
+  --progress-bar-background-active: #4c4c4c;
 }

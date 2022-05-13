@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ViewChild, ElementRef } from '@angular/core';
 import { AnimationController, MenuController, ModalController } from '@ionic/angular';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -18,7 +19,7 @@ export class HomePage implements AfterViewInit {
   };
 
   round = {
-    slidesPerView: 3,
+    slidesPerView: 4,
     grabCursor: true,
     cubeEffect: {
       shadow: true,
