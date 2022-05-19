@@ -54,9 +54,6 @@
   text-align: left;
 }
 
-.redondo {
-  border-radius: 100%;
-}
 
 .slides-md {
   --bullet-background: #000000;
@@ -67,6 +64,12 @@
   margin-bottom: 100px;
 }
 
-ion-card-content {
-  bottom: 10px;
+ion-slide {
+
+  img {
+    border-radius: 100%;
+  }
+  ion-card-content {
+    bottom: 10px;
+  }
 }
