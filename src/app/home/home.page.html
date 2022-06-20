@@ -4,6 +4,12 @@
       Custom Clothes
     </ion-title>
 
+    <!-- Botão do Favorito -->
+    <ion-button slot="end" fill="clear" color="dark">
+      <ion-icon slot="icon-only" name="heart-outline" color="dark"></ion-icon>
+    </ion-button>
+    <!-- Botão do Favorito -->
+
     <!-- Abrir Carrinho -->
     <ion-button slot="end" fill="clear" color="dark">
       <ion-icon slot="icon-only" name="bag-outline" color="dark"></ion-icon>
@@ -17,7 +23,12 @@
     <!--Abrir Menu-->
 
   </ion-toolbar>
+  <!-- Pesquisa -->
+  <ion-searchbar></ion-searchbar>
+  <!-- Pesquisa -->
 </ion-header>
+
+
 
     <!--Menu-->
     <ion-menu side="start" menuId="first" contentId="main">
@@ -31,7 +42,7 @@
           <ion-item class="menufonte"><ion-icon name="person-outline" class="espaco"></ion-icon>Conta</ion-item>
         </ion-list>
       </ion-content>
-      <ion-label class="version">v1.58</ion-label>
+      <ion-label class="version">v1.65</ion-label>
     </ion-menu>
     <ion-router-outlet id="main"></ion-router-outlet>
     <!--Menu-->
@@ -60,6 +71,7 @@
 
 
 <ion-content>
+
   <div>
     <ion-slides [options]="round">
       <ion-slide>
